@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1 id="title">Survey Form</h1>
-	<div id="form">
+	<div id="form" method="POST">
 		<form id="survey-form">
 			<p id="description">Let us know how we can improve freeCodeCamp</p>
 
@@ -19,13 +19,13 @@
 				<input id="name" type="text" name="name" placeholder="Enter your name" required>
 			</div>
 			<div class="left-side">
-				<label id="email-label">*Email</label>:
+				<label id="email-label">*Email:</label>
 			</div>
 			<div class="right-side">
 				<input id="email" type="email" name="email" placeholder="Enter your email" required>
 			</div>
 			<div class="left-side">
-				<label id="age-label">*Age</label>
+				<label id="age-label">*Age:</label>
 			</div>
 			<div class="right-side">
 				<input type="number" name="age" placeholder="Age" required min="12" max="99">
@@ -34,6 +34,7 @@
 			<div class="left-side">
 				<label id="dropLabel">Which option best describes your current role?</label> 
 			</div>
+			<div class="right-side">
 				<select id="dropdown">
 					<option disabled selected>Select an option</option>
 					<option value="student">Student</option>
@@ -42,47 +43,82 @@
 					<option value="notsay">Prefer not to say</option>
 					<option value="other">Other</option>
 				</select>
+			</div>
 
 			<div class="left-side">
 				<label id="recommendLabel">*How likely is that you would recommend freeCodeCamp to a friend?</label> 
 			</div>
-				
-			<input type="radio" name="recommend" checked required> Definitely
-			<input type="radio" name="recommend">Maybe
-			<input type="radio" name="recommend">Not sure
+			
+			<div id="radioButtons">	
+				<div>
+					<input type="radio" name="recommend" checked required>Definitely
+				</div>
+				<div>
+					<input type="radio" name="recommend">Maybe
+				</div>
+				<div>
+					<input type="radio" name="recommend">Not sure
+				</div>
+			</div>
 			<div class="left-side">
 				<label id="likedLabel">What do you like most in FCC:</label>
 			</div>
-			<select id="liked">
-				<option disabled selected>Select an option</option>
-				<option value="challenged">Challenges</option>
-				<option value="projects">Projects</option>
-				<option value="community">Community</option>
-				<option value="opensource">Open Source</option>
-			</select>
+			<div class="right-side">
+				<select id="liked">
+					<option disabled selected>Select an option</option>
+					<option value="challenged">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="opensource">Open Source</option>
+				</select>
+			</div>
 
 			<div class="left-side">
 				<label id="toimpove">Things that should be improved in the future
 			(Check all that apply):</label>
 			</div>
 			<div id="selections">
-				<input type="checkbox" name="improve" value="fep">Front-end Projects
-				<input type="checkbox" name="improve" value="bep">Back-end Projects
-				<input type="checkbox" name="improve" value="dv">Data Visualization
-				<input type="checkbox" name="improve" value="chal">Challenges
-				<input type="checkbox" name="improve" value="opensource">Open Source Community
-				<input type="checkbox" name="improve" value="gitter">Gitter help rooms
-				<input type="checkbox" name="improve" value="videos">Videos
-				<input type="checkbox" name="improve" value="meetups">City Meetups
-				<input type="checkbox" name="improve" value="wiki">Wiki
-				<input type="checkbox" name="improve" value="forum">Forum
-				<input type="checkbox" name="improve" value="courses">Additional Courses
+				<div>
+					<input type="checkbox" name="improve" value="fep">Front-end Projects
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="bep">Back-end Projects
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="dv">Data Visualization
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="chal">Challenges
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="opensource">Open Source Community
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="gitter">Gitter help rooms
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="videos">Videos
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="meetups">City Meetups
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="wiki">Wiki
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="forum">Forum
+				</div>
+				<div>
+					<input type="checkbox" name="improve" value="courses">Additional Courses
+				</div>
 			</div>
 			<div class="left-side">
 				<label id="comments">Any Comments or Suggestions?</label>
 			</div>
-			<textarea placeholder="Enter your comment here"></textarea>
-			<input type="submit" name="submit">
+			<div class="right-side">
+				<textarea name="comment" placeholder="Enter your comment here"></textarea>
+			</div>
+			<input id="sub" type="submit" name="submit">
 		</form>
 	</div>
 
