@@ -25,10 +25,10 @@
 				<input id="email" type="email" name="email" placeholder="Enter your email" required>
 			</div>
 			<div class="left-side">
-				<label id="age-label">*Age:</label>
+				<label id="number-label">*Age:</label>
 			</div>
 			<div class="right-side">
-				<input type="number" name="age" placeholder="Age" required min="12" max="99">
+				<input id="number" type="number" name="age" placeholder="Age" required min="12" max="99">
 			</div>
 
 			<div class="left-side">
@@ -51,13 +51,13 @@
 			
 			<div id="radioButtons">	
 				<div>
-					<input type="radio" name="recommend" checked required>Definitely
+					<input value="definitely" type="radio" name="recommend" checked required>Definitely
 				</div>
 				<div>
-					<input type="radio" name="recommend">Maybe
+					<input value="maybe" type="radio" name="recommend">Maybe
 				</div>
 				<div>
-					<input type="radio" name="recommend">Not sure
+					<input value="notsure" type="radio" name="recommend">Not sure
 				</div>
 			</div>
 			<div class="left-side">
@@ -118,7 +118,7 @@
 			<div class="right-side">
 				<textarea name="comment" placeholder="Enter your comment here"></textarea>
 			</div>
-			<input id="sub" type="submit" name="submit">
+			<input id="submit" type="submit" name="submit">
 		</form>
 	</div>
 

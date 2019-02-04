@@ -88,7 +88,7 @@ label,p,input,option,select,textarea{
 	width: 100%;
 }
 
-#sub{
+#submit{
 	padding: 10px 20px;
 	margin: 30px auto;
 	display: block;
@@ -100,7 +100,7 @@ label,p,input,option,select,textarea{
 	transition: all linear 0.05s;
 }
 
-#sub:hover{
+#submit:hover{
 	opacity: 1;
 	transform: scale(1.1);
 }
