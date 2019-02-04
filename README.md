@@ -2,4 +2,4 @@
 FreeCodeCamp Responsive Web Design Project 2 - Servey Form
 
 
-[View on CodePen](https://codepen.io/CptGeo/pen/ErvgJQ/){:target="_blank" rel="noopener"}
+[View on CodePen](https://codepen.io/CptGeo/pen/ErvgJQ){:target="_blank" rel="noopener"}
